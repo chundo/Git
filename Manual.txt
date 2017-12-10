@@ -77,3 +77,5 @@ git push origin v1.0 #Subir tag
 git push origin --tags #subir varias tag
 
 git branch gh-pages #crea page-git sobre una rama
+
+CAmbios en la rama

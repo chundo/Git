@@ -15,6 +15,7 @@ git commit --amend #agregar cambios al ultimo commit
 
 git status #ver el estado del repo
 
+git tag v1.0 #tag ligero
 git tag -a 0.0 -m 'Comentario de la etiqueta o version' #agregar una etiqueta al repo
 git tag -l #ver los tag y/o versiones
 git tag 0.2 id-del-commit #agrega un tag a un commit
@@ -33,7 +34,9 @@ git reset --mixed [SHA 1]: elimina los cambios hasta el working area
 git reset --hard [SHA 1]: regresa hasta el commit del [SHA 1]
 
 git branch nuevarama #creo una nueva rama
+git branch #ver las rama en la que estoy
 git branch -l #listar ramas
+git brach -a #ver ramas ocultas
 git branch -d rama #eliminar rama
 git branch -D rama #eliminar rama forzada
 git branch -m ramanombre ramanuevonombre #renombrar una rama
@@ -42,8 +45,9 @@ git checkout ramaamover #moverme a una rama
 git checkout -id-commit #movemre en un commit
 git checkout -b rama #crear e ingresar a la rama
 git checkout -- file #limpiar cambios en archivo
+git checkout --track -b origin/nombre-de-la-rama #clonar rama
 
-git merge ramaquequieromesclar #mesclar cambios de ramas con la principal
+git merge ramaquequieromesclar #mesclar cambios de ramas con la principal (Debo situarme en la rama master)
 
 git rebase ramaamesclar #reescribir la historia del repo en linea de tiempo
 git rebase -i ramaamesclar #reescribir la historia del repo en linea de tiempo interactivo
@@ -60,110 +64,16 @@ git remote add origin url-repo #agregar repositorio remoto
 git remote -v #ver a que repoesta enlazado
 git remote remove origin #elimina el enlace
 
+git clone http://url.gihut-o-bitbuket
+
 git fetch origin master #rtrae archivos de la rama master
 git merge origin/master --allow-unrelated-histories #mesclar cambios de la rama con mi master
 git pull origin master
 
+git push origin master #Subir commit al repositorio remoto
+git push origin master -f #hacer un push forzado
 
+git push origin v1.0 #Subir tag
+git push origin --tags #subir varias tag
 
-
-#1 Configuracion de Gihut inicial
-git config --global --list
-git config --global user.name 'chundo'
-git config --global user.email 'segundo.espana@gmail.com'
-git config --global color.ui true
-
-
-#2 El inicio del proyecto
-git init 
-
-#3 El estado del proyecto
-git status
-
-#4 Agregar al commit
-git add -A
-git add .
-git add archivo.rb
-
-#5 Guardar cambio del commit 
-git commit -m 'Nombre del commit'
-
-#6 Lista de commit
-git log
-
-#7 Viajar en el tiempo (Regresarse)
-git checkout id-del-comit-de-la-lista-del-log
-
-#8 Ir al ultimo commit 
-git checkout master
-git checkout id-del-ultimo-commit
-
-#9 Eliminar commit o Matar Commit
-git reset --hard #borra todo lo de commit 
-git reset --soft #elimina el commit sin tocar el codigo
-
-#10 Ver las ramas
-git branch 
-
-#11 Crear una rama
-git branch sr1
-
-#12 Cambiar de rama
-git checkout sr1
-
-#13 Eliminar rama
-git brach -d sr1
-
-#14 Funcionar rama con la master (Debo situarme en la rama que va a absorver)
-git brach master
-git merge sr1
-
-#15 Crear y moverce a una rama
-git checkout -b sr2
-
-#16 Clonar un proyecto de githut o bitbuket
-git clone http://url.gihut-o-bitbuket
-
-#17 Vincular proyecto local a proyecto remoto
-git remote add origin http://url.gihut-o-bitbuket
-
-#18 Ver repositorios remotos
-git remote -v
-
-#19 Eliminar Vinculacion con repositorio remoto
-git remove remote origin 
-
-#20 Subir commit al repositorio remoto
-git push origin master
-
-#21 Cambiar los commit titulos
-git commit --emend -m "Nuevo texto"
-git push origin master -f
-
-#22 Crear tag anotadas
-git tag -a v1.0 -m 'Comentario'
-git tag -a v1.0 -m 'Comentario' id-del-commit
-
-#23 Tag Ligeras
-git tag v1.0
-
-#24 Subir tag
-git push origin v1.0
-
-#25 subir varias tag
-git push origin --tags
-
-#25 Ver ramas ocultas
-git brach -a
-
-#26 bajar cambios de commit que se trabajan bajo el mismo archivo
-git fetch origin #pasar cambios a la rama oculta
-git merge origin/master #combinas los cambios con nuestra rama
-git push origin master #sube cambios a la rama oculta
-
-
-#26 crea page-git sobre una rama
-git branch gh-pages
-
-#clonar rama
-git checkout --track -b origin/nombre-de-la-rama
+git branch gh-pages #crea page-git sobre una rama

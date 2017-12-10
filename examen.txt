@@ -1,0 +1,60 @@
+¿Qué es un sistema control de versiones?
+2
+¿Qué es un sistema control de versiones local?
+3
+¿Qué es un sistema control de versiones centralizado? 555
+4
+¿Qué es un sistema control de versiones distribuido?
+5
+¿Cuáles son los tipos de sistema control de versiones?
+6
+¿Qué tipo de sistema control de versiones es Git?
+7
+¿En qué se enfocó Linus Torvals al crear Git? 5555
+8
+¿Qué es un SHA-1? 555
+9
+¿Cómo podemos crear carpetas en la terminal?
+10
+Con el comando ls en la terminal podemos:
+11
+¿Qué podemos hacer para limpiar la terminal?
+12
+¿Cómo podemos crear archivos en la terminal?
+13
+¿Qué comando podemos usar para crear un nuevo repositorio en Git?
+14
+¿Qué comando podemos usar para verificar el estatus de los archivos en un repositorio de Git?
+15
+¿Qué comando podemos usar para borrar archivos en stage o en el repositorio?
+16
+¿Qué comando podemos usar para comprometer los archivos en Git?
+17
+¿Para qué nos sirve el SHA-1 cuando creamos tags?
+18
+¿Cuál es una de las ventajas de git log? 5555
+19
+¿Qué podemos hacer con git diff?
+20
+¿Cómo borrar ramas con contenido?
+21
+¿Qué comando usamos para crear una rama?
+22
+¿Qué comandos podemos usar para movernos entre ramas?
+23
+¿Con qué comando podemos guardar un cambio sin confirmarlo (commit)?
+24
+¿Cómo puedes mezclar commits en una rama diferente a la que están?
+
+25
+¿Qué podemos usar para crear un nuevo repositorio a partir de otro?
+26
+¿Cómo creamos una conexión entre nuestro repositorio local y uno remoto?
+27
+¿Qué nombre se usa por convención para conectar un repositorio local con uno remoto?
+28
+¿Cómo traemos los cambios del repositorio remoto?
+29
+¿Qué es un Pull Request?
+30
+¿Qué herramienta podemos hacer para tener un mayor control de nuestros proyecto en GitHub?

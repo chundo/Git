@@ -22,4 +22,12 @@ git stash apply stash@{numero} #aplicar mis cambios guardados temporalmente
 
 git cherry-pick id-del-commit-que-quiero-agrer #poner un commit en una rama
 
+git remote add origin url-repo #agregar repositorio remoto
+git remote -v #ver a que repoesta enlazado
+git remote remove origin #elimina el enlace
+
+git fetch origin master #rtrae archivos de la rama master
+git merge origin/master --allow-unrelated-histories #mesclar cambios de la rama con mi master
+git pull origin master
+
 git log --oneline -graph 

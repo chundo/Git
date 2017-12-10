@@ -3,4 +3,4 @@ git config --global --list
 git config --global user.name 'chundo'
 git config --global user.email 'segundo.espana@gmail.com'
 git config --global color.ui true
-git config --local core.editor "nano"
+git config --local core.editor "nano" #editor preferido

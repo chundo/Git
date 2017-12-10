@@ -1,0 +1,25 @@
+git branch nuevarama #creo una nueva rama
+git branch -l #listar ramas
+git branch -d rama #eliminar rama
+git branch -D rama #eliminar rama forzada
+git branch -m ramanombre ramanuevonombre #renombrar una rama
+
+git checkout ramaamover #moverme a una rama
+git checkout -id-commit #movemre en un commit
+git checkout -b rama #crear e ingresar a la rama
+git checkout -- file #limpiar cambios en archivo
+
+git merge ramaquequieromesclar #mesclar cambios de ramas con la principal
+
+git rebase ramaamesclar #reescribir la historia del repo en linea de tiempo
+git rebase -i ramaamesclar #reescribir la historia del repo en linea de tiempo interactivo
+
+git stash #guardar cambios temporalmente
+git stash list #ver listas de cambios temporales guardados
+git stash drop stash@{numero} #eliminar un stash
+git stash apply #aplicar mis cambios guardados temporalmente 
+git stash apply stash@{numero} #aplicar mis cambios guardados temporalmente 
+
+git cherry-pick id-del-commit-que-quiero-agrer #poner un commit en una rama
+
+git log --oneline -graph 

@@ -1,4 +1,9 @@
 # Git
 Manual Completo de git
 
-Primeros pasos por git
+##Configuracion
+configuracion inicial de git
+
+##Manuel
+Contenido y comandos
+

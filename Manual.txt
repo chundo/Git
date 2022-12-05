@@ -83,3 +83,5 @@ CAmbios en la rama
 git checkout rama -f #Cambiar de rama forzado
 
 git reset HEAD~1 #Eliminar el commit sin borrar el codigo
+
+ git diff develop master  #diferencia entre ramas
